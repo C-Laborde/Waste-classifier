@@ -2,8 +2,8 @@ import os
 import random
 
 
-def split_indices(waste, seed1, seed2):
-    n = len(os.listdir(waste))
+def split_indices(folder, seed1, seed2):
+    n = len(os.listdir(folder))
     full_set = list(range(1, n+1))
 
     # train_indices

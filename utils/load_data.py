@@ -29,5 +29,5 @@ def load_data(data_type):
                 img_path = os.path.join(mat_path, img)
                 all_data.append(image.imread(img_path))
             labels = labels + [mat] * len(files)
-    return (np.array(all_data), labels)
+    return np.array(all_data), labels
         
